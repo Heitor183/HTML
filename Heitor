@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principalt</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="Pratica01.html">Início</a></li>
+            <li><a href="aformulario.html">Formulário</a></li>      
+            <li><a href="MenuPrincipal.html">Menu</a></li>
+        </ul>
+    </nav>
+    <head>
+        ...
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+ <!-- todo seu conteúdo -->
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdnamazonialive.rockinrio.com/wp-content/uploads/2017/08/shutterstock_1457922.jpg" alt="AMAZÔNIA NOSSA MAIOR RIQUEZA – Águas Do Brasil" class=" nofocus" tabindex="0" aria-label="AMAZÔNIA NOSSA MAIOR RIQUEZA – Águas Do Brasil" role="button" style="position: absolute; height: 50%; width: 50%; inset: 0px; margin: auto;">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/photos/sunset-at-fields-of-serra-da-canastra-national-park-minas-gerais-picture-id881903436?k=6&amp;m=881903436&amp;s=612x612&amp;w=0&amp;h=VdfrQI--m4CzVF3aNif6Hhyf6xosIPhJrl8rQsVu-CI=" alt="Cerrado Brasileiro Banco de Imagens e Fotos de Stock - iStock" class=" nofocus" tabindex="0" aria-label="Cerrado Brasileiro Banco de Imagens e Fotos de Stock - iStock" role="button" data-bm="131">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.todoestudo.com.br/wp-content/uploads/2018/02/mata-atlantica-1.jpg" alt="Mata Atlântica: fauna, flora, clima, hidrografia [resumo]" class=" nofocus" tabindex="0" aria-label="Mata Atlântica: fauna, flora, clima, hidrografia [resumo]" role="button" style="position: absolute; height: 50%; width: 50%; inset: 122px; margin: auto;">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+<header>
+    <h1>Apresentação de Biomas</h1>
+</header>
+<label for="biomas">Escolha um Bioma</label>
+
+<select id="biomas" onchange="mostrarBioma()">
+    <option value="">-- Selecione --</option>
+    <option value="amazonia">Amazônia</option>
+    <option value="cerrado">Cerrado</option>
+    <option value="Mata Atlântica">Mata Atlântica</option>
+    <option value="caatinga">Caatinga</option>
+    <option value="pantanal">Pantanal</option>
+    <option value="pampa">Pampa</option>
+</select>
+
+<div id="conteudoBioma" style="margin-top: 20px;">
+    <!-- Aqui aparecerá o conteúdo -->
+</div>
+
+<script>
+    function mostrarBioma() {
+        const bioma = document.getElementById("biomas").value;
+        const conteudo = document.getElementById("conteudoBioma");
+
+        let html = "";
+
+        if (bioma === "amazonia") {
+            html = `<h2>Amazônia</h2>
+                    <p>A maior floresta tropical do mundo, rica em biodiversidade.</p>
+                   <img src="https://wallpapers.com/images/hd/cool-amazonas-river-r9ebj5rd5m9jool2.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1680px; height: 349px; margin: 0px; width: 558px;" 
+                    <p><p>O bioma da Amazônia é uma vasta região de floresta tropical localizada principalmente no norte do Brasil, mas que se estende por outros países da América do Sul, como Peru, Colômbia e Venezuela. É caracterizado por uma grande biodiversidade, 
+                      com uma enorme variedade de espécies de plantas, animais e micro-organismos. A floresta amazônica desempenha um papel crucial no equilíbrio climático global, pois atua como um grande reservatório de carbono e é fundamental para a regulação do ciclo hidrológico. Além disso, a Amazônia é essencial para a manutenção de muitas culturas e comunidades indígenas que vive
+                      m em harmonia com o meio ambiente. A região também enfrenta grandes desafios, como o desmatamento e a degradação ambiental, que ameaçam sua preservação.</p>
+1                      <h3>Como previnir o desmatamento</h3>
+                         <img src="https://metsul.com/wp-content/uploads/2021/11/amazonia5.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1332px; width: 559px; height: 320px; margin: 0px;" alt="A devastação da Amazônia em dez imagens" jsname="kn3ccd" aria-hidden="false">
+                      <p>A prevenção do desmatamento na Amazônia requer ações como o combate à grilagem de terras e à exploração ilegal, além da promoção de práticas agrícolas sustentáveis.
+                         É crucial fortalecer as unidades de conservação e apoiar alternativas econômicas, como a exploração de produtos florestais não madeireiros. A conscientização da população também desempenha um papel importante, informando sobre os impactos do desmatamento.
+                        A colaboração entre governo, sociedade e setor privado é essencial para proteger a floresta e garantir sua preservação para as futuras gerações.</p>
+                          `;
+                    
+        } else if (bioma === "cerrado") {
+            html = `<h2>Cerrado</h2>
+                    <p>Segundo maior bioma do Brasil, conhecido pelas savanas e árvores retorcidas.</p>
+                    <img src="https://media.istockphoto.com/id/864749274/pt/foto/brazilian-closed.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=FGI0xXbKpfRHRQseSe4GsYScvbEeca434M4UU-XJ2bY=" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 612px; height: 372px; margin: 0px; width: 559px;" alt="16.800+ Cerrado Brasileiro fotos de stock, imagens e fotos royalty-free -  iStock" jsname="kn3ccd" aria-hidden="false">
+                     <p>O bioma do cerrado é uma das maiores formações vegetais do Brasil, cobrindo aproximadamente 24% do território nacional. Caracteriza-se por uma vegetação diversificada, com predominância de arbustos, árvores de porte médio e gramíneas, 
+                        adaptadas a um clima de estações bem definidas: seca no inverno e chuvosa no verão. O cerrado é considerado a "savana brasileira", 
+                        abrigando uma grande variedade de espécies endêmicas de flora e fauna, muitas das quais são adaptadas às condições de solos ácidos e baixa fertilidade. Apesar de sua importância ecológica, o cerrado sofre pressões devido ao avanço da agricultura e da pecuária, o que ameaça sua biodiversidade e seus serviços ambientais.</p>
+                    <img src="https://s2.static.brasilescola.uol.com.br/be/2023/01/area-do-cerrado-um-importante-bioma-brasileiro-destruida-por-um-incendio.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 600px; width: 558px; height: 348px; margin: 0px;" alt="Desmatamento do Cerrado: causas e efeitos - Brasil Escola" jsname="kn3ccd" aria-hidden="false">
+                    <p>O desmatamento do cerrado é um dos principais problemas ambientais enfrentados por esse bioma. A expansão da agricultura, especialmente para o cultivo de grãos como soja e milho, e a pecuária são as principais atividades responsáveis pela derrubada da vegetação nativa. Esse desmatamento acelera a perda de biodiversidade, fragmenta ecossistemas e afeta os ciclos hídricos, comprometendo a qualidade e a disponibilidade de água para a região. Além disso, o uso do fogo, muitas vezes de forma irregular, também contribui para a degradação do bioma.
+                    Para enfrentar esse problema, é necessário implementar políticas públicas mais rigorosas para a fiscalização e controle do desmatamento, assim como incentivar práticas agrícolas sustentáveis e a recuperação de áreas degradadas. 
+                    A ampliação das unidades de conservação e a criação de corredores ecológicos são essenciais para a preservação da biodiversidade. Além disso, promover a educação e a conscientização sobre a importância do cerrado para o equilíbrio ambiental é crucial para garantir sua preservação.</p>`;
+
+        } else if (bioma === "Mata Atlântica") {
+            html = `<h2>Mata Atlântica</h2>
+                    <p>Biomaa que acompanha o litoral brasileiro, muito diverso mas ameaçado.</p>
+                    <img src="https://classic.exame.com/wp-content/uploads/2023/06/Foto-10-A-Mata-Atlantica-e-um-dos-biomas-ricos-do-mundo-em-biodiversidade-Divulgacao.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1920px; height: 314px; margin: 0px; width: 558px;" alt="Mata Atlântica: confira imagens do bioma brasileiro | Galeria | Exame" jsname="kn3ccd" aria-hidden="false">
+                    <p>A Mata Atlântica é um dos biomas mais ricos em biodiversidade do Brasil, abrangendo uma vasta área que vai do litoral até o interior, cobrindo partes de 17 estados brasileiros. Caracteriza-se por uma vegetação densa e variada, com árvores de grande porte, muitas das quais são endêmicas, além de uma grande diversidade de fauna, incluindo espécies ameaçadas de extinção. Este bioma é essencial para a regulação climática,
+                     a preservação de recursos hídricos e o equilíbrio ambiental. No entanto, a Mata Atlântica foi severamente impactada pelo desmatamento devido à urbanização, à agricultura e à exploração predatória de recursos naturais, restando apenas uma pequena porção de sua área original. A conservação da Mata Atlântica é fundamental para a manutenção de seus serviços ambientais e da rica biodiversidade que abriga.</p>
+                     <img src="https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-ndk9re.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 800px; height: 373px; margin: 0px; width: 559px;" alt="Principais bacias hidrográficas da Mata Atlântica têm menos de 20% de  cobertura vegetal – Brasil de Fato" jsname="kn3ccd" aria-hidden="false">
+                      <p>O desmatamento na Mata Atlântica é um dos maiores desafios ambientais do Brasil. Historicamente, o bioma foi intensamente explorado para a expansão das cidades, agricultura e pecuária, resultando na destruição de grande parte de sua cobertura original. O avanço da urbanização, a agricultura comercial e a extração ilegal de madeira ainda são as principais causas do desmatamento, que ameaça a rica biodiversidade da região e compromete a função da floresta na regulação climática e no ciclo da água.
+                    Apesar de avanços na proteção, como a criação de unidades de conservação e a implementação de políticas de recuperação de áreas degradadas, o desmatamento ilegal continua a ser um problema significativo. A solução passa pela intensificação da fiscalização, o
+                    fortalecimento das leis ambientais, a promoção de práticas agrícolas sustentáveis e a restauração de áreas desmatadas.
+                    A conscientização da população sobre a importância da Mata Atlântica também é fundamental para preservar esse bioma essencial para o equilíbrio ecológico e o bem-estar humano.</p>
+                    `;
+                    
+        } else if (bioma === "caatinga") {
+            html = `<h2>Caatinga</h2>
+                    <p>Bioma exclusivo do Brasil, com vegetação adaptada ao clima semiárido.</p>
+                    <img src="https://t4.ftcdn.net/jpg/02/34/38/13/360_F_234381354_H8Ps7cHaDcSKkLsnkuffjF8Fcii6AkgH.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 540px; width: 540px; height: 360px; margin: 0px;" alt="Caatinga Imagens – Procure 5,842 fotos, vetores e vídeos | Adobe Stock" jsname="kn3ccd" aria-hidden="false">
+                    <p></p>
+                    <img 
+                    <p></p>
+                    `;
+        } else if (bioma === "pantanal") {
+            html = `<h2>Pantanal</h2>
+                    <p>A maior planície alagável do mundo, com fauna impressionante.</p>
+                    <img src="pantanal.jpg" alt="Pantanal" width="300">`;
+        } else if (bioma === "pampa") {
+            html = `<h2>Pampa</h2>
+                    <p>Bioma do sul do Brasil, com campos e vegetação rasteira.</p>
+                    <img src="pampa.jpg" alt="Pampa" width="300">`;        
+        }
+
+        conteudo.innerHTML = html;
+    }
+</script>
+      
+</body>
+</html>
